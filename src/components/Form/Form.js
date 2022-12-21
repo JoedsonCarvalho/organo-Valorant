@@ -1,3 +1,4 @@
+import { Button } from '../Button/Button';
 import { DropdownList } from '../DropdownList/DropdownList';
 import ImageField from '../ImageField';
 import { TextField } from '../TextField/TextField';
@@ -19,6 +20,7 @@ export const Form = (props) =>{
                 <TextField label='Nome' required={true} placeholder='Digite o nome do participante:'/>
                 <ImageField label='Imagem' imgId='image' placeholder='Insira a imagem de seu companheiro:' />
                 <DropdownList list={agentType} label='Selecione o tipo do agente' />
+                <Button>Criar card</Button>
             </form>
         </section>
     )
